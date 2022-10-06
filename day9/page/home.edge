@@ -1,0 +1,26 @@
+@layout('layouts/main')
+@set('title', 'Home page')
+
+@section('body')
+  <section class="hero is-warning">
+    <div class="hero-body">
+      <p>This is inside body</p>
+    </div>
+  </section>
+@endsection
+
+@section('content')
+  <section class="hero is-warning">
+    <div class="hero-body">
+      <p>This is inside content</p>
+    </div>
+  </section>
+
+  <!-- @each(user in users)
+  <li> {{ user.username }} </li>
+@endeach  -->
+
+@if(islike)
+{{like}}
+@endif
+@endsection
